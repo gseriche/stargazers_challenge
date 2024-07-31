@@ -22,13 +22,13 @@ This project fetches the star count for specified GitHub repositories and output
 1. Pull the Docker image:
 
    ```bash
-   docker pull yourdockerhubusername/github-stars:latest
+   docker pull gseriche/stargazers_challenge:latest
    ```
 
 2. Run the Docker container:
 
    ```bash
-   docker run --rm yourdockerhubusername/github-stars:latest
+   docker run --rm gseriche/stargazers_challenge:latest
    ```
 
 This will fetch the star counts for the default repositories (vscode, cpython, django) and display the results.
@@ -38,7 +38,7 @@ This will fetch the star counts for the default repositories (vscode, cpython, d
 To fetch star counts for different repositories, you can override the default command:
 
 ```bash
-docker run --rm yourdockerhubusername/github-stars:latest python main.py "owner1/repo1" "owner2/repo2"
+docker run --rm gseriche/stargazers_challenge:latest python main.py "owner1/repo1" "owner2/repo2"
 ```
 
 Replace "owner1/repo1" and "owner2/repo2" with the GitHub repositories you're interested in.
@@ -50,8 +50,8 @@ Replace "owner1/repo1" and "owner2/repo2" with the GitHub repositories you're in
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/github-stars-counter.git
-   cd github-stars-counter
+   git clone https://github.com/gseriche/stargazers_challenge.git
+   cd stargazers_challenge
    ```
 
 2. Install the required Python packages:
@@ -73,13 +73,13 @@ python -m unittest test_main.py
 Build the Docker image:
 
 ```bash
-docker build -t github-stars:local .
+docker build --platform linux/amd64 -t stargazers_challenge:local .
 ```
 
 Run the locally built image:
 
 ```bash
-docker run --rm github-stars:local
+docker run --rm stargazers_challenge:local
 ```
 
 ## CI/CD Pipeline

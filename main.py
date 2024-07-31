@@ -32,9 +32,9 @@ def print_yaml(data):
 if __name__ == "__main__":
     # Example usage
     repo_list = [
-        "microsoft/vscode",
-        "python/cpython",
-        "django/django"
+        "freeCodeCamp/freeCodeCamp",
+        "996icu/996.ICU",
+        "EbookFoundation/free-programming-books"
     ]
 
     stars_data = get_repo_stars(repo_list)
