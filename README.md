@@ -37,7 +37,7 @@ This will fetch the star counts for the default repositories (vscode, cpython, d
 
 To fetch star counts for different repositories, you can override the default command:
 
-```
+```bash
 docker run --rm yourdockerhubusername/github-stars:latest python main.py "owner1/repo1" "owner2/repo2"
 ```
 
