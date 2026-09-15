@@ -3,4 +3,4 @@ charset-normalizer==3.4.4
 PyYAML==6.0.3
 idna==3.11
 requests==2.33.1
-urllib3==2.6.2
+urllib3==2.7.0
